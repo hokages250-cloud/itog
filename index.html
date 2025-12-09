@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Спрато</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header с навигацией -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span>SpratoPortfolio</span>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Главная</a></li>
+                        <li><a href="#about" class="nav-link">Обо мне</a></li>
+                        <li><a href="#skills" class="nav-link">Навыки</a></li>
+                        <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Секция героя -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Привет, я <span class="highlight">Владислав Спрато</span></h1>
+                        <p class="hero-subtitle">Frontend разработчик & Верстальщик</p>
+                        <p class="hero-description">Создаю современные веб-сайты с использованием HTML, CSS и других современных технологий.</p>
+                        <a href="#portfolio" class="btn">Посмотреть работы</a>
+                    </div>
+                    <div class="hero-image">
+                        <!-- Fallback если изображение не загрузится -->
+                        <div class="image-placeholder" style="display: none; background-color: #4a6fa5; color: white; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            
+                        </div>
+                        <img src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-c95q-p-programmist-png-30.png" 
+                             alt="Фото разработчика"
+                             onerror="this.style.display='none'; this.parentNode.querySelector('.image-placeholder').style.display='flex';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Обо мне" -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <!-- Fallback если изображение не загрузится -->
+                        <div class="image-placeholder" style="display: none; background-color: #166088; color: white; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            
+                        </div>
+                        <img src="https://cbs.ru/upload/iblock/83f/83f8d4643429fa05c7d06a0080414a6b.png" 
+                        alt=""
+                             onerror="this.style.display='none'; this.parentNode.querySelector('.image-placeholder').style.display='flex';">
+                    </div>
+                    <div class="about-text">
+                        <h3>Мой путь в веб-разработке</h3>
+                        <p>Я занимаюсь веб-разработкой уже пол года. Начал с простых HTML заголовков, затем освоил CSS и Figma.</p>
+                        <p>Создаю адаптивные, кроссбраузерные сайты и веб-приложения. Постоянно изучаю новые технологии и методологии для улучшения качества кода.</p>
+                        <p>В своей работе уделяю внимание не только функциональности, но и пользовательскому опыту, производительности и семантической разметке.</p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label">Имя:</span>
+                                <span class="info-value">Владислав Спрато</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Город:</span>
+                                <span class="info-value">Челябинск</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Почта:</span>
+                                <span class="info-value">sprato@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Доступность:</span>
+                                <span class="info-value">Открыт для проектов</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Навыки" -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="skill-title">HTML5 & CSS3</h3>
+                        <p class="skill-description">Семантическая верстка, Flexbox, Grid, адаптивный дизайн, CSS-анимации, препроцессоры SASS/SCSS, Bootstrap.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="skill-title">Инструменты</h3>
+                        <p class="skill-description">Git, Figma, Adobe XD, Photoshop, VS Code, Chrome DevTools, Gulp, валидаторы кода.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="skill-title">Адаптивная верстка</h3>
+                        <p class="skill-description">Mobile-first подход, кроссбраузерность, pixel perfect, работа с макетами, оптимизация для мобильных устройств.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="skill-title">Оптимизация</h3>
+                        <p class="skill-description">Оптимизация скорости загрузки, SEO-верстка, доступность (a11y), семантическая разметка, валидный код.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Секция "Портфолио" -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class="section-title">Мои работы</h2>
+        <div class="portfolio-grid">
+            <!-- Работа 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <div class="image-placeholder portfolio-placeholder" style="background-color: #2c3e50;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Интернет-магазин</span>
+                    </div>
+                    <img src="https://via.placeholder.com/600x400/2c3e50/ffffff?text=E-commerce+Project" 
+                         alt="Интернет-магазин"
+                         onerror="this.style.display='none';">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="portfolio-title">Интернет-магазин</h3>
+                    <p class="portfolio-description">Полнофункциональный интернет-магазин с корзиной, фильтрами и адаптивным дизайном.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Работа 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <div class="image-placeholder portfolio-placeholder" style="background-color: #3498db;">
+                        <i class="fas fa-building"></i>
+                        <span>Корпоративный сайт</span>
+                    </div>
+                    <img src="IMG/finance-group-mnogostranicnyj-html-sablon-veb-sajta-po-buhgalterskomu-ucetu-i-auditu_67262-2-original.webp" 
+                         alt="Корпоративный сайт"
+                         onerror="this.style.display='none';">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="portfolio-title">Корпоративный сайт</h3>
+                    <p class="portfolio-description">Многостраничный сайт для IT-компании с анимациями, формами и CMS.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">SCSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Работа 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <div class="image-placeholder portfolio-placeholder" style="background-color: #9b59b6;">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Веб-приложение</span>
+                    </div>
+                    <img src="https://via.placeholder.com/600x400/9b59b6/ffffff?text=Web+Application" 
+                         alt="Веб-приложение"
+                         onerror="this.style.display='none';">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="portfolio-title">Веб-приложение</h3>
+                    <p class="portfolio-description">Панель управления с графиками, таблицами и интерактивными элементами.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Работа 4 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <div class="image-placeholder portfolio-placeholder" style="background-color: #e74c3c;">
+                        <i class="fas fa-rocket"></i>
+                        <span>Лендинг</span>
+                    </div>
+                    <img src="https://via.placeholder.com/600x400/e74c3c/ffffff?text=Landing+Page" 
+                         alt="Лендинг"
+                         onerror="this.style.display='none';">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="portfolio-title">Лендинг</h3>
+                    <p class="portfolio-description">Одностраничный сайт для запуска нового продукта с высокой конверсией.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Форма обратной связи -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь со мной</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Давайте обсудим ваш проект</h3>
+                        <p>Я всегда открыт для обсуждения новых проектов, творческих идей или возможностей стать частью вашей команды.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Адрес</h4>
+                                    <p>Челябинск, ул. Бейвеля, 6</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>sprato@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Телефон</h4>
+                                    <p>+7 (902) 867-45-17</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Telegram</h4>
+                                    <p>@bysprato</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- ОСТАЛСЯ ТОЛЬКО TELEGRAM -->
+                        <div class="social-links">
+                            <a href="https://t.me/bysprato" target="_blank" class="social-link telegram-link">
+                                <i class="fab fa-telegram"></i>
+                                <span>Написать в Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="feedback-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Тема сообщения" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-submit">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (ОСТАЛСЯ ТОЛЬКО TELEGRAM) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span>SpratoPortfolio</span>
+                    </a>
+                </div>
+                
+                <p class="footer-text">Создаю современные и адаптивные веб-сайты с 2025 года</p>
+                
+                <!-- ОСТАЛСЯ ТОЛЬКО TELEGRAM -->
+                <div class="footer-social">
+                    <a href="https://t.me/alex_dev" target="_blank" class="footer-social-link" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-copyright">© 2025 SpratoPortfolio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
